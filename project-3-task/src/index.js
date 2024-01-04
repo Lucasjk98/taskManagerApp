@@ -9,10 +9,10 @@ import Contact from './components/contact';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.REACT_APP_FOR_PATH}>
       <Routes>
-        <Route path={process.env.REACT_APP_FOR_PATH} element={<App />} />
-        <Route path={`${process.env.REACT_APP_FOR_PATH}/contact`} element={<Contact />} />
+        <Route path= "/" element={<App />} />
+        <Route path= "/contact" element={<Contact />} />
       </Routes>
     </BrowserRouter> 
   </React.StrictMode>
