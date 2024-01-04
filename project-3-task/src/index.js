@@ -4,12 +4,12 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter, Routes, Route} from "react-router-dom"
-import Contact from './components/contact';
+import Contact from './components/Contact';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter basename={process.env.REACT_APP_FOR_PATH}>
+    <BrowserRouter basename="/project-3-task/">
       <Routes>
         <Route path= "/" element={<App />} />
         <Route path= "/contact" element={<Contact />} />
