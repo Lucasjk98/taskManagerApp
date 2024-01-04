@@ -11,8 +11,8 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path = "/" element = {<App/>} />
-        <Route path = "/contact" element = {<Contact/>} />
+        <Route path={process.env.REACT_APP_FOR_PATH} element={<App />} />
+        <Route path={`${process.env.REACT_APP_FOR_PATH}/contact`} element={<Contact />} />
       </Routes>
     </BrowserRouter> 
   </React.StrictMode>
